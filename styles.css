@@ -1,1 +1,131 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hero {
+    background-image: url('https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.hero-content {
+    text-align: left;
+    color: white;
+}
+
+.hero-content span {
+    font-size: 20px;
+
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* Black Box Section Styles */
+.black-box {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    
+    
+}
+
+.black-box h3 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.black-box span {
+    font-size: 96px;
+    color: white;
+}
+
+/* Card Container Section Styles */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+    margin: 2rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 340px;
+    padding: 10px;
+    height: 440px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-content h3 {
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Bottom Section Styles */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 20px;
+}
+
+.contact-me {
+    flex: 1;
+    background-color: #4d5f00;
+    padding: 1rem;
+    color: white;
+}
+
+.about-me {
+    flex: 1;
+    background-color: #761c00;
+    padding: 1rem;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 786px) {
+    .hero {
+        min-height: 50vh;
+    }
+
+    .black-box h3 {
+        font-size: 24px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+}
